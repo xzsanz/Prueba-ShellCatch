@@ -6,7 +6,7 @@ async function obtenerUsuario() {
         document.getElementById('foto_usuario').src=usuario.picture.large
         document.getElementById('nombre_usuario').texContent =`${usuario.name.first} ${usuario.name.last}`;
         document.getElementById('correo_usuario').textContent=usuario.email;
-        document.getElementById('ubicacion_usuario').textContent=`${usuario.ubicacion.ciudad}, ${usuario.ubicacion.estado}`;
+        document.getElementById('ubicacion_usuario').textContent=`${usuario.location.city}, ${usuario.location.country}`;
     }catch(error){
         alert("Ocurrio un error");
         console.error(error);
