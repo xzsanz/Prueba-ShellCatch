@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuario aleatorio</title>
+    <link rel="stylesheet" href="disenio.css">
 </head>
 <body>
-    <h1>Usuario aleatorio</h1>
-    <div id="identificador">
-        <img id="foto_usuario" alt="Foto del usuario">
-        <h2 id="nombre_usuario">Nombre</h2>
-        <p id="correo_usuario">Correo</p>
-        <p id="ubicacion_usuario">Ubicacion</p>
+
+    <div class = "container">
+        
+        <div id="identificador">
+            <img id="foto_usuario" alt="Foto del usuario">
+            <h2 id="nombre_usuario">Nombre</h2>
+            <p id="correo_usuario">Correo</p>
+            <p id="ubicacion_usuario">Ubicacion</p>
+        </div>
+        <button onclick="obtenerUsuario()">Obtener usuario</button>
     </div>
-    <button onclick="obtenerUsuario()">Obtener usuario</button>
     <script src="script.js"></script>
 </body>
 </html>
